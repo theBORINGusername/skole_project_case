@@ -16,33 +16,18 @@ body {
   background-color: rgb(9, 255, 0);
 }
 
-.nav-content {
-  display: flex;
-  background-color: orange;
+.section {
+
 }
 
-.side-nav {
-  display: flex;
-  justify-content: center;
-  width: 80px;
-  background-color: black;
-  color: red;
+.section--image {
+
 }
 
-.video-grid {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: rgb(0, 255, 145);
-  width: 100%;
-  margin: 1em 1em 0 1em;
-  row-gap: 2em;
-  column-gap: 0.5em;
-}
-.video-grid--item {
-  background-color: blue;
-  height: 300px;
-  width: 100%;
+.section--header {
+
 }
 
-/*# sourceMappingURL=output.css.map */
+.section--text {
+  
+}
