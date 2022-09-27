@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rebeccapurple;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background-color: rgb(9, 255, 0);
+}
+
+.nav-content {
+  display: flex;
+  background-color: orange;
+}
+
+.side-nav {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  background-color: black;
+  color: red;
+}
+
+.video-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgb(0, 255, 145);
+  width: 100%;
+  margin: 1em 1em 0 1em;
+  row-gap: 2em;
+  column-gap: 0.5em;
+}
+.video-grid--item {
+  background-color: blue;
+  height: 300px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=output.css.map */
