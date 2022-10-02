@@ -10,24 +10,39 @@ body {
 }
 
 .top-nav {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: center;
   height: 40px;
   background-color: rgb(9, 255, 0);
 }
 
-.section {
+.header {
+  height: 100vh;
+  padding-top: 40px;
+  background: red;
+}
 
+.section {
+  padding: 7rem 5rem;
 }
 
 .section--image {
+  display: grid;
+  grid-template-areas: "pic header"
+                        "pic text";
+}
 
+.pic {
+  grid-area: pic;
 }
 
 .section--header {
+  grid-area: header;
 
 }
 
 .section--text {
-  
+  grid-area: text;
 }
