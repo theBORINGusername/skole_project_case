@@ -7,6 +7,7 @@
 
 body {
   background-color: rebeccapurple;
+  font-family: 'Roboto', sans-serif;
 }
 
 .top-nav {
@@ -14,15 +15,49 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 40px;
-  background-color: rgb(9, 255, 0);
+  background-color: rgb(169, 102, 1)
 }
 
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 0 1rem;
+}
+
+.logo span {
+  color: black;
+}
+
+
+
 .header {
+  display: flex;
+  justify-content: center;
   height: 100vh;
   padding-top: 40px;
+  background-size: cover;
+  background-color: rgba(127, 255, 212, 0.9);
+  background-image: url("../../drive-download-20221002T151746Z-001/stemning.jpeg");
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(186, 87, 0, 0.178);
+}
+
+.hero-text {
+  display: inline-block;
   background: red;
 }
+
 
 .section {
   padding: 7rem 5rem;
