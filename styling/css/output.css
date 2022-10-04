@@ -6,27 +6,53 @@
 }
 
 body {
-  background-color: rebeccapurple;
+  background-color: #000;
   font-family: 'Roboto', sans-serif;
 }
 
 .top-nav {
   position: fixed;
+
   width: 100%;
+  height: 40px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  background-color: rgb(169, 102, 1)
+
+  background-color: rgb(169, 102, 1);
 }
 
 .nav-list {
+  display: inline-grid;
+  width: 1200px;
+  grid-template-columns: min-content max-content;
+  
+}
+
+.nav-item-list {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+}
+
+.nav-item-list .nav-item-link {
+  padding: 0 1rem;
 }
 
 .nav-item {
-  padding: 0 1rem;
+  padding: 1rem;
+}
+
+.nav-item-link {
+  font-size: 18px;
+  color: rgb(15, 15, 15);
+  text-decoration: none;
+  border-bottom: 3px solid rgb(169, 102, 1);
+}
+
+.nav-item-link:hover {
+  color: rgb(30, 30, 30);
+  border-bottom: 3px solid #fff;
 }
 
 .logo span {
@@ -38,10 +64,11 @@ body {
 .header {
   display: flex;
   justify-content: center;
+
   height: 100vh;
   padding-top: 40px;
+
   background-size: cover;
-  background-color: rgba(127, 255, 212, 0.9);
   background-image: url("../../drive-download-20221002T151746Z-001/stemning.jpeg");
 }
 
@@ -49,7 +76,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 100%;
+
   background: rgba(186, 87, 0, 0.178);
 }
 
@@ -60,24 +89,39 @@ body {
 
 
 .section {
-  padding: 7rem 5rem;
+  background: #181818;
+  color: #d7d7d7;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding: 7rem 0;
 }
 
-.section--image {
-  display: grid;
+.section-image-container {
+  display: inline-grid;
+  column-gap: 1em;
+  row-gap: .5em;
+  grid-template-columns: 400px 800px;
+  grid-template-rows: auto;
   grid-template-areas: "pic header"
                         "pic text";
-}
+  }
 
-.pic {
+.section-pic {
+  width: 100%;
+  filter: brightness(60%);
   grid-area: pic;
 }
 
-.section--header {
+.section-header {
   grid-area: header;
-
 }
 
-.section--text {
+.section-header span {
+  border-bottom: solid #d7d7d7 2px;
+}
+
+.section-text {
   grid-area: text;
+  line-height: 1.6;
 }
