@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+  padding-top: 40px;
+
+  background-image: url("../../drive-download-20221002T151746Z-001/stemning.jpeg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  background: rgba(186, 87, 0, 0.178);
+}
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    color: #0e0e0e;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: .5rem 1rem;
+  }
+  
+  .hero-text-round {
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 100%;
+  }
+  
+  .section {
+    background: #181818;
+    color: #d7d7d7;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7rem 0;
+  }
+  
+  .section-image-container {
+    display: grid;
+    column-gap: 1em;
+    row-gap: .5em;
+    grid-template-columns: 400px calc(800px - 1em);
+    grid-template-rows: auto;
+    grid-template-areas: "pic header"
+                          "pic text";
+    }
+  
+  .section-pic {
+    z-index: 1;
+    width: 100%;
+    filter: brightness(60%);
+    grid-area: pic;
+  }
+  
+  .section-header {
+    grid-area: header;
+  }
+  
+  .section-header span {
+    border-bottom: solid #d7d7d7 2px;
+  }
+  
+  .section-text {
+    grid-area: text;
+    line-height: 1.6;
+  }
