@@ -1,0 +1,41 @@
+.form-container {
+    display: grid;
+    justify-items: center;
+
+    height: 100vh;
+    padding-top: 40px;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content;
+}
+
+.contact-us-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    
+    width: 1200px;
+    height: 100%;
+}
+
+
+.contact-us {
+    background-color: #0a0a0a;
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+.contact-us-info {
+    padding: .5rem 2rem;
+    line-height: 1.5;
+    list-style-position: inside;
+
+}
+
+.contact-us-info-card {
+    height: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #0a0a0a;
+}
