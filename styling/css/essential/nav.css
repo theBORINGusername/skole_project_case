@@ -36,10 +36,10 @@
     font-size: 18px;
     color: #d4d4d4;
     text-decoration: none;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
   }
   
   .nav-item-link:hover {
     color: rgb(216, 216, 216);
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
   }
