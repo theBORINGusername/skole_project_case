@@ -18,12 +18,58 @@
     height: 100%;
 }
 
-
 .contact-us {
     background-color: #0a0a0a;
-    padding: 1rem;
+    padding: .5rem 2rem;
     border-radius: 5px;
 
+}
+
+.contact-us-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: .3rem;
+}
+
+.contact-us select {
+    display: block;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: .3rem 0;
+    background: #000;
+    border: none;
+}
+
+.contact-us textarea {
+    display: block;
+    background-color: #000;
+    border: 1px solid rgb(11, 11, 11);
+
+    resize: vertical;
+
+    color: #fff;
+    margin: .5rem 0;
+    padding: .3rem .5rem;
+    padding-left: .5rem;
+    min-height: 8rem;
+    width: 100%;
+}
+
+.contact-us input {
+    display: block;
+    background-color: #000;
+    border: 1px solid rgb(11, 11, 11);
+
+    color: #fff;
+    margin: .5rem 0;
+    padding: .3rem .5rem;
+    padding-left: .5rem;
+    height: 4rem;
+    width: 100%;
+}
+
+.contact-us input:focus {
+    outline: #fff 2px solid;
 }
 
 .contact-us-info {
