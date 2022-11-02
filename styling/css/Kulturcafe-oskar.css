@@ -5,11 +5,14 @@
   height: 100vh;
   padding-top: 40px;
 
-  background-image: url("../../drive-download-20221002T151746Z-001/stemning.jpeg");
+  background-image: linear-gradient(black, black),
+                    url("../../drive-download-20221002T151746Z-001/stemning.jpeg");
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-size: cover;
+    
+    background-blend-mode: saturation
 }
 
 .header-content {
@@ -21,7 +24,8 @@
 
   /*background: rgba(186, 87, 0, 0.178);*/
 
-  background: rgba(133, 62, 0, 0.31);
+  /*background: rgba(133, 62, 0, 0.31);*/
+
 }
 
 .hero-text {
